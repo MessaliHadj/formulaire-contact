@@ -71,7 +71,7 @@ form.addEventListener('submit', e=>{
   if (nomValid && prenomValid && telValid && emailValid && sujetValid && msgValid) {
     // function envoyerMail
     Email.send({
-      SecureToken : "b7c98683-d889-4f27-9697-bc1775029c44",
+      SecureToken : "541db457-7e64-4568-be76-67caedbec9e6",
       To : 'lasalledesport90@gmail.com',
       From : "lasalledesport90@gmail.com",
       Subject : "This is the subject",
