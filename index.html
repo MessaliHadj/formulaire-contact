@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script defer src="main.js"></script>
+  <script defer src="https://smtpjs.com/v3/smtp.js"></script>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+  <title>Les REGEX</title>
+</head>
+<body>
+  <div class="container">
+    <div class="row">
+      <div class="col-6 mx-auto">
+        <form class="d-flex flex-wrap justify-content-between">
+          <div class="mb-3 col-4">
+            <label for="InputNom" class="form-label">Nom</label>
+            <input type="text" class="form-control" id="InputNom" aria-describedby="nom">
+          </div>
+          <div class="mb-3 col-7">
+            <label for="InputPrenom" class="form-label">Prenom</label>
+            <input type="text" class="form-control" id="InputPrenom" aria-describedby="prenom">
+          </div>
+          <div class="mb-3 col-6">
+            <label for="InputTel" class="form-label">Téléphone</label>
+            <input type="tel" class="form-control" id="InputTel" aria-describedby="tel">
+          </div>
+          <div class="mb-3 col-5">
+            <label for="InputEmail" class="form-label">Email address</label>
+            <input type="email" class="form-control" id="InputEmail" aria-describedby="emailHelp">
+          </div>
+          <div class="mb-3 col-12">
+            <label for="InputSujet" class="form-label">Sujet</label>
+            <input type="text" class="form-control" id="InputSujet">
+          </div>
+          <div class="mb-3 col-12">
+            <label class="form-label" for="InputMessage">Message</label>
+            <textarea class="form-control" id="InputMessage"></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary">Envoyer</button>
+        </form>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
