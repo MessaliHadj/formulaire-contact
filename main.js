@@ -16,6 +16,8 @@ let emailValid = false;
 let sujetValid = false; 
 let msgValid = false; 
 
+let message = "test"
+
 const UserRegex = /^[a-zA-Z-]{3,23}$/;
 const PasswordRegex = /^(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?=.*[!@&#$%]).{8,23}$/;
 const EmailRegex = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
@@ -71,15 +73,15 @@ form.addEventListener('submit', e=>{
   if (nomValid && prenomValid && telValid && emailValid && sujetValid && msgValid) {
     // function envoyerMail
     Email.send({
-      SecureToken : "541db457-7e64-4568-be76-67caedbec9e6",
+      Host : "smtp.elasticemail.com",
+      Username : "lasalledesport90@gmail.com",
+      Password : "76C8286E090E4EFEE9F45EDD7FE41B69819F",
       To : 'lasalledesport90@gmail.com',
       From : "lasalledesport90@gmail.com",
       Subject : "This is the subject",
       Body : "And this is the body"
     }).then(
-      message => {
-        alert(message)
-      }
+      message => alert(message)
     );
   }
 })
